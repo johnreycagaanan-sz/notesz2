@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteSZ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <label for="fontSize">Font Size:</label>
+            <select id="fontSize" onchange="changeFontSize()">
+                <option value="14">14px</option>
+                <option value="16">16px</option>
+                <option value="18">18px</option>
+                <option value="20">20px</option>
+                <option value="22">22px</option>
+                <option value="24">24px</option>
+                <option value="26">26px</option>
+                <option value="28">28px</option>
+                <option value="30">30px</option>
+                <option value="32">32px</option>
+                <option value="34">34px</option>
+                <option value="36">36px</option>
+
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="textAlign">Text Align:</label>
+            <select id="textAlign" onchange="changeTextAlign()">
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="right">Right</option>
+                <option value="justify">Justify</option>
+            </select>
+        </div>
+        <textarea id="note" placeholder="Start typing your note..."></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
